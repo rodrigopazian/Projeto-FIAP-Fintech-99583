@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Call CDN Server FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Call CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- Call Google fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFacilita - Receitas</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="container-fluid container-header my-3">
+        <nav class="header-menu">
+            <a href="#">
+                <i class="fa-solid fa-bars" id="icon-menu"></i>
+            </a>
+        </nav>
+        <div id="cont_logo_finfacilita">
+            <img id="small-logo" src="../images/SmallLogo.png" alt="Logo FinFacilita">
+        </div>
+        <nav class="header-profile">
+            <i class="fas fa-menu-alt"><img id="profile-alt" src="../images/ProfileAlt.png" alt="P"></i>
+        </nav>
+    </header>
+
+    <main class="main main-container my-1 text-center">
+        <section class="container my-3">
+            <legend>CADASTRAR RECEITAS</legend>
+            <form action="./form_receita.html" id="receitas-fixas" method="post" name="receitas-fixas">
+
+                <div class="container-items">
+                    <label for="nome-receita-fixa">Informe sua fonte de renda principal:</label>
+                    <input id="nome-receita-fixa" name="nome-receita-fixa" type="text"
+                        placeholder="Nome Ex: Salário, Renda Mensal" required autofocus>
+                </div>
+
+                <div class="container-items">
+                    <label for="valor-receita-fixa">Informe o valor mensal dessa fonte:</label>
+                    <input id="valor-receita-fixa" name="valor-receita-fixa" type="number" placeholder="R$ 0,00"
+                        required>
+                </div>
+
+                <div class="container-items">
+                    <button class="btn-general" type="submit">Salvar</button>
+                </div>
+            </form>
+        </section>
+        <section class="container my-5">
+            <legend>ADICIONAR OUTRAS FONTES DE RENDA</legend>
+            <form action="./form_receita.html" id="receitas-variaveis" method="post" name="receitas-variaveis">
+
+                <div class="container-items">
+                    <label for="nome-receita-variavel">Informe o nome de outras fontes:</label>
+                    <input id="nome-receita-variavel" name="nome-receita-variavel" type="text"
+                        placeholder="Nome da fonte de renda" required>
+                </div>
+
+                <div class="container-items">
+                    <label for="valor-receita-variavel">Informe o valor dessa fonte:</label>
+                    <input id="valor-receita-variavel" name="valor-receita-variavel" type="number" placeholder="R$ 0,00"
+                        required>
+                </div>
+
+                <div class="container-items">
+                    <button class="btn-general" type="submit">Adicionar Fonte de Renda</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="container-fluid mt-6">
+            <table class="table-receitas table-hover mx-3">
+                <thead class="text-center">
+                    <tr>
+                        <th class="thead-nome" colspan="2">Nome</th>
+                        <th></th>
+                        <th class="thead-valor" colspan="2">Valor</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td class="text-start px-2 col-1-data text-info"><i class="fa-sharp fa-solid fa-dollar-sign"></i></td>
+                        <td class="text-start px-2 col-2-data">Salário</td>
+                        <td class="text-start px-2 col-3-data">R$</td>
+                        <td class="text-end px-2 col-4-data">4300,00</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="text-start px-2 col-1-data text-info"><i class="fa-sharp fa-solid fa-dollar-sign"></i></td>
+                        <td class="text-start px-2 col-2-data">Rendimentos</td>
+                        <td class="text-start px-2 col-3-data">R$</td>
+                        <td class="text-end px-2 col-4-data">43,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container-fluid text-center my-3 table-buttons">
+                <div class="table-button">                    
+                    <button id="btn-editar-tabela" type="submit"><i></i>Editar Tabela</button>
+                </div>
+                <div class="table-button">
+                    <button id="btn-limpar-tabela" type="submit"><i></i>Limpar Tabela</button>
+                </div>
+            </div>
+    
+    
+        </section>
+    </main>
+
+    <!-- Call script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
