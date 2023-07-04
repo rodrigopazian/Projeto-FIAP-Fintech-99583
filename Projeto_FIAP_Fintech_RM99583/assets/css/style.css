@@ -1,0 +1,212 @@
+/* Soft-reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Variables */
+
+:root {
+    --bg-color: #1F1F1F;
+    --primary-color: #40D7D0;
+    --secondary-color: #FFFFFF;
+    --primary-color-transparent: #FFFFFF34;
+    --primary-color-txt: #FFFFFF;
+    --placeholder-color-txt: #FFFFFFFF;
+    --blue-money-color: #4077D0;
+    --green-money-color: #40F7D0
+    --red-money-color: #ff1e46;
+    --transparent: #00000000;
+    --semi-transparent: #ffffff34;
+    --transition: .5s;
+
+}
+
+/* Inheritance */
+
+html {
+    font-size: 62.5%;    /* Alterar valor de calculo do 'rem' de 16px para 10px */
+}
+
+body {
+    font-size: 1.6rem;    /* Retornando valor padrão de fonte-size do body com unidade rem */
+    color: var(--primary-color-txt);
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+/* Header */
+
+.container-header {
+    width: 90%;
+    height: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icon-menu {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+}
+
+#small-logo {
+    width: 8rem;
+    height: 3.2rem;
+    margin-bottom: 4vh;
+}
+
+#profile-alt {
+    width: 4rem;
+}
+
+/* Forms */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2vh;
+}
+
+.container-items {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 58rem;
+}
+
+legend, label, input, button {   
+    font-size: 1.2rem;
+    letter-spacing: 0.12rem;
+    line-height: 1.4rem;
+    text-align: center;
+    height: 3.4rem;
+}
+
+legend {
+    font-weight: 700;
+    margin-top: 4vh;
+    font-size: 1.2rem;
+    color: var(--primary-color-txt); 
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input {
+    font-weight: 100;
+    color: var(--placeholder-color-txt);
+    width: 80%;
+    border-radius: 0.3rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--semi-transparent);
+}
+
+input::focus {
+    border-color: var(--secondary-color);
+    border-block-color: var(--secondary-color);
+}
+
+
+
+input::selection {
+    border-color: var(--secondary-color);
+}
+
+button {
+    color: var(--primary-color-txt);
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--transparent);
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-general {
+    padding: 0.7rem;
+    width: 22rem;
+}
+
+/* Table  */
+
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: .2rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    height: 3.6rem;
+}
+
+.thead-nome {
+    width: 60%;
+}
+
+.thead-valor {
+    width: 40%;
+}
+
+.table-row {
+    border: .2rem solid var(--primary-color);
+}
+
+.col-1-data {
+    width: 1%;
+}
+
+.col-2-data {
+    width: 75%;
+}
+
+.col-3-data {
+    width: 1%;
+}
+
+.col-4-data {
+    width: 23%;
+}
+
+td {
+    font-size: 1.1rem;
+    height: 3rem;
+}
+
+
+tr:hover {
+    background-color: var(--primary-color-transparent);
+}
+
+.table-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-button {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#btn-editar-tabela, #btn-limpar-tabela {
+    font-size: .9rem;
+    width: 12rem;
+    height: 2.2rem;
+}
