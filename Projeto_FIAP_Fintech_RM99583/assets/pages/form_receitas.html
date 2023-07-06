@@ -25,19 +25,46 @@
 </head>
 
 <body>
-    <header class="container-fluid container-header my-3">
-        <nav class="header-menu">
-            <a href="#">
-                <i class="fa-solid fa-bars" id="icon-menu"></i>
-            </a>
-        </nav>
-        <div id="cont_logo_finfacilita">
-            <img id="small-logo" src="../images/SmallLogo.png" alt="Logo FinFacilita">
-        </div>
-        <nav class="header-profile">
-            <i class="fas fa-menu-alt"><img id="profile-alt" src="../images/ProfileAlt.png" alt="P"></i>
+    <header class="container-fluid container-header my-4">
+        <nav class="header">
+            <ul>
+                <li>
+                    <div class="header-menu">
+                        <button class="main-button-menu">
+                            <i class="fa-solid fa-bars" id="icon-menu"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div id="cont_logo_finfacilita">
+                        <img id="small-logo" src="../images/SmallLogo.png" alt="Logo FinFacilita">
+                    </div>
+                </li>
+                <li>
+                    <div class="header-profile">
+                        <button class="main-profile-menu">
+                            <img id="profile-alt" src="../images/ProfileAlt.png" alt="P">
+                        </button>
+                    </div>
+                </li>
+            </ul>
         </nav>
     </header>
+
+    <aside>
+        <nav class="side-menu">
+            <div class="container-side-menu">
+                <button class="side-menu-button" id="hide-menu-button-1"><img id="img-expanded-menu" src="../images/ImgExpandedMenu.png" alt="Menu Expandido"></button>
+                <button class="side-menu-button" id="profile-button">PERFIL</button>
+                <button class="side-menu-button" id="homepage-button">HOMEPAGE</button>
+                <button class="side-menu-button" id="revenue-button">RECEITAS</button>
+                <button class="side-menu-button" id="expenses-button">DESPESAS</button>
+                <button class="side-menu-button" id="assets-button">LISTA DE ATIVOS</button>
+                <button class="side-menu-button" id="configs-button">CONFIGURAÇÕES</button>
+                <button class="side-menu-button" id="exit-button">SAIR</button>
+            </div>
+        </nav>
+    </aside>
 
     <main class="main main-container my-1 text-center">
         <section class="container my-3">
@@ -46,14 +73,21 @@
 
                 <div class="container-items">
                     <label for="nome-receita-fixa">Informe sua fonte de renda principal:</label>
-                    <input id="nome-receita-fixa" name="nome-receita-fixa" type="text"
-                        placeholder="Nome Ex: Salário, Renda Mensal" required autofocus>
+                    <div class="container-input">
+                        <i class="fa-solid fa-check checkmark-offset"></i>
+                        <input id="nome-receita-fixa" name="nome-receita-fixa" type="text" placeholder="Nome Ex: Salário, Renda Mensal" required autofocus>
+                        <i class="fa-solid fa-check icon-checkmark"></i>
+                    </div>
+                    
                 </div>
-
                 <div class="container-items">
                     <label for="valor-receita-fixa">Informe o valor mensal dessa fonte:</label>
-                    <input id="valor-receita-fixa" name="valor-receita-fixa" type="number" placeholder="R$ 0,00"
+                    <div class="container-input">
+                        <i class="fa-solid fa-check checkmark-offset"></i>
+                        <input id="valor-receita-fixa" name="valor-receita-fixa" type="number" inputmode="numeric" placeholder="R$ 0,00"
                         required>
+                        <i class="fa-solid fa-check icon-checkmark"></i>
+                    </div>
                 </div>
 
                 <div class="container-items">
@@ -67,14 +101,23 @@
 
                 <div class="container-items">
                     <label for="nome-receita-variavel">Informe o nome de outras fontes:</label>
-                    <input id="nome-receita-variavel" name="nome-receita-variavel" type="text"
+
+                    <div class="container-input">
+                        <i class="fa-solid fa-check checkmark-offset"></i>
+                        <input id="nome-receita-variavel" name="nome-receita-variavel" type="text"
                         placeholder="Nome da fonte de renda" required>
+                        <i class="fa-solid fa-check icon-checkmark"></i>
+                    </div>
                 </div>
 
                 <div class="container-items">
                     <label for="valor-receita-variavel">Informe o valor dessa fonte:</label>
-                    <input id="valor-receita-variavel" name="valor-receita-variavel" type="number" placeholder="R$ 0,00"
+                    <div class="container-input">
+                        <i class="fa-solid fa-check checkmark-offset"></i>
+                        <input id="valor-receita-variavel" name="valor-receita-variavel" type="number" inputmode="numeric" placeholder="R$ 0,00"
                         required>
+                        <i class="fa-solid fa-check icon-checkmark"></i>
+                    </div>
                 </div>
 
                 <div class="container-items">
@@ -83,7 +126,7 @@
             </form>
         </section>
 
-        <section class="container-fluid mt-6">
+        <section class="container-fluid table-section mt-6">
             <table class="table-receitas table-hover mx-3">
                 <thead class="text-center">
                     <tr>
@@ -112,8 +155,8 @@
                 <div class="table-button">                    
                     <button id="btn-editar-tabela" type="submit"><i></i>Editar Tabela</button>
                 </div>
-                <div class="table-button">
-                    <button id="btn-limpar-tabela" type="submit"><i></i>Limpar Tabela</button>
+                <div class="table-button-container">
+                    <button class="table-button" id="btn-limpar-tabela" type="submit"><i></i>Limpar Tabela</button>
                 </div>
             </div>
     
@@ -123,7 +166,7 @@
 
     <!-- Call script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
