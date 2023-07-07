@@ -1,5 +1,12 @@
+<!-- FORM RECEITAS HTML PAGE -->
+
 <!DOCTYPE html>
+
+<!-- HTML -->
+
 <html lang="pt-BR">
+
+<!-- HEAD -->
 
 <head>
 
@@ -16,16 +23,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Metatags -->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+
     <title>FinFacilita - Receitas</title>
 
+    <!-- Css stylesheet links -->
+
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
+<!-- BODY -->
+
 <body>
+
+    <!-- HEADER -->
+
     <header class="container-fluid container-header my-4">
+
+        <!-- HEADER MENU -->
+
         <nav class="header">
             <ul>
                 <li>
@@ -49,9 +72,15 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
+    <!-- ASIDE -->
+
     <aside>
+
+        <!-- SIDE MENU -->
+
         <nav class="side-menu">
             <div class="container-side-menu">
                 <button class="side-menu-button" id="hide-menu-button-1"><img id="img-expanded-menu" src="../images/ImgExpandedMenu.png" alt="Menu Expandido"></button>
@@ -66,16 +95,21 @@
         </nav>
     </aside>
 
+    <!-- MAIN -->
+
     <main class="main main-container my-1 text-center">
+
+        <!-- FORM - FONTES DE RENDA FIXAS -->
+
         <section class="container my-3">
             <legend>CADASTRAR RECEITAS</legend>
-            <form action="./form_receita.html" id="receitas-fixas" method="post" name="receitas-fixas">
+            <form action="./form_receitas.html" id="receitas-fixas" method="post" name="receitas-fixas">
 
                 <div class="container-items">
                     <label for="nome-receita-fixa">Informe sua fonte de renda principal:</label>
                     <div class="container-input">
                         <i class="fa-solid fa-check checkmark-offset"></i>
-                        <input id="nome-receita-fixa" name="nome-receita-fixa" type="text" placeholder="Nome Ex: Salário, Renda Mensal" required autofocus>
+                        <input id="nome-receita-fixa" class="nome-receita-fixa input" name="nome-receita-fixa" type="text" placeholder="Nome Ex: Salário, Renda Mensal" maxlength="16" required autofocus>
                         <i class="fa-solid fa-check icon-checkmark"></i>
                     </div>
                     
@@ -84,28 +118,31 @@
                     <label for="valor-receita-fixa">Informe o valor mensal dessa fonte:</label>
                     <div class="container-input">
                         <i class="fa-solid fa-check checkmark-offset"></i>
-                        <input id="valor-receita-fixa" name="valor-receita-fixa" type="number" inputmode="numeric" placeholder="R$ 0,00"
+                        <input id="valor-receita-fixa" class="input number-input" name="valor-receita-fixa" type="text" inputmode="numeric" placeholder="R$ 0,00" maxlength="14"
                         required>
                         <i class="fa-solid fa-check icon-checkmark"></i>
                     </div>
                 </div>
 
                 <div class="container-items">
-                    <button class="btn-general" type="submit">Salvar</button>
+                    <button id="btn-salvar-receita" class="btn-general" type="submit">Salvar</button>
                 </div>
             </form>
         </section>
+
+        <!-- FORM - ADICIONAR FONTES DE RENDA -->
+
         <section class="container my-5">
             <legend>ADICIONAR OUTRAS FONTES DE RENDA</legend>
-            <form action="./form_receita.html" id="receitas-variaveis" method="post" name="receitas-variaveis">
+            <form action="./form_receitas.html" id="receitas-variaveis" method="post" name="receitas-variaveis">
 
                 <div class="container-items">
                     <label for="nome-receita-variavel">Informe o nome de outras fontes:</label>
 
                     <div class="container-input">
                         <i class="fa-solid fa-check checkmark-offset"></i>
-                        <input id="nome-receita-variavel" name="nome-receita-variavel" type="text"
-                        placeholder="Nome da fonte de renda" required>
+                        <input id="nome-receita-variavel" class="input " name="nome-receita-variavel" type="text"
+                        placeholder="Nome da fonte de renda" maxlength="16" required>
                         <i class="fa-solid fa-check icon-checkmark"></i>
                     </div>
                 </div>
@@ -114,17 +151,19 @@
                     <label for="valor-receita-variavel">Informe o valor dessa fonte:</label>
                     <div class="container-input">
                         <i class="fa-solid fa-check checkmark-offset"></i>
-                        <input id="valor-receita-variavel" name="valor-receita-variavel" type="number" inputmode="numeric" placeholder="R$ 0,00"
+                        <input id="valor-receita-variavel" class="input number-input" name="valor-receita-variavel" type="text" inputmode="numeric" placeholder="R$ 0,00" maxlength="14"
                         required>
                         <i class="fa-solid fa-check icon-checkmark"></i>
                     </div>
                 </div>
 
                 <div class="container-items">
-                    <button class="btn-general" type="submit">Adicionar Fonte de Renda</button>
+                    <button id="btn-adicionar-receita" class="btn-general" type="submit">Adicionar Fonte de Renda</button>
                 </div>
             </form>
         </section>
+
+        <!-- TABLE -->
 
         <section class="container-fluid table-section mt-6">
             <table class="table-receitas table-hover mx-3">
@@ -136,7 +175,7 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-body">
                     <tr class="table-row">
                         <td class="text-start px-2 col-1-data text-info"><i class="fa-sharp fa-solid fa-dollar-sign"></i></td>
                         <td class="text-start px-2 col-2-data">Salário</td>
@@ -151,6 +190,9 @@
                     </tr>
                 </tbody>
             </table>
+
+            <!-- TABLE BUTTONS -->
+
             <div class="container-fluid text-center my-3 table-buttons">
                 <div class="table-button">                    
                     <button id="btn-editar-tabela" type="submit"><i></i>Editar Tabela</button>
@@ -164,9 +206,9 @@
         </section>
     </main>
 
-    <!-- Call script Bootstrap -->
+    <!-- Call script Bootstrap and app.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/app_receitas.js"></script>
 </body>
 
 </html>
