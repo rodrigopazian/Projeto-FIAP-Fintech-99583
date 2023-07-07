@@ -13,4 +13,6 @@ function validateFields() {
     });
 }
 
+function 
+
 validateFields();
