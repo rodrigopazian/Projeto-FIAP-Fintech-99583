@@ -1,3 +1,5 @@
+// Implementing still
+
 function validateFields() {
     const fields = document.querySelectorAll(".input");
     const validFields = document.querySelectorAll(".icon-checkmark");
