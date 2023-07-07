@@ -107,6 +107,12 @@ function addRevenue() {
         e.preventDefault();
 
         const tableBody = document.querySelector("#table-body");
+        const tr = tableBody.firstChild;
+        console.log(tr);
+        console.log(tr.querySelector('td'));
+        // if (tableBody.firstChild.) {
+        //     tableBody.firstChild.remove();
+        // }
 
         const nmRVarValue = nmReceitaVar.value;
         const vlRVarValue = vlReceitaVar.value;

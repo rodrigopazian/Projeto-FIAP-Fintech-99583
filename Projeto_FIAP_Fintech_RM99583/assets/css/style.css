@@ -51,12 +51,21 @@ body {
     margin: auto 0;
 }
 
+.header-logo {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     padding-left: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 
 #icon-menu {
@@ -80,8 +89,22 @@ ul {
     margin-bottom: 4vh;
 }
 
+#big-logo {
+    width: 20rem;
+    height: 8.6rem;
+    margin-bottom: 4vh;
+}
+
 #profile-alt {
     width: 2rem;
+}
+
+#login-legend {
+    margin-top: 10vh;
+}
+
+#index-form {
+    margin-top: 10vh;
 }
 
 /* Side-menu */
@@ -162,7 +185,18 @@ form {
     max-width: 58rem;
 }
 
-legend, label, input, button {   
+.btn-index-google, .btn-login-google {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.email-input, .password-input {
+    max-width: 24rem;
+}
+
+    legend, label, input, button {   
     font-size: 1.2rem;
     letter-spacing: 0.12rem;
     line-height: 1.4rem;
@@ -195,11 +229,12 @@ input {
 }
 
 input:focus {
-    border-color: var(--secondary-color);
+    border-color: var(--red-money-color);
+    outline: var(--red-money-color);
 }
 
-input::selection {
-    border-color: var(--secondary-color);
+input::selection {    
+    outline: var(--red-money-color);
 }
 
 input:valid {
@@ -235,6 +270,11 @@ button {
 .btn-general {
     padding: 0.7rem;
     width: 22rem;
+}
+
+#btn-criar-email {
+    background-color: var(--primary-color);
+    border: .2rem solid var(--secondary-color);
 }
 
 /* Table  */
