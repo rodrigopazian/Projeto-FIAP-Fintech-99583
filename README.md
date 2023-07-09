@@ -1,6 +1,7 @@
 <p style="margin: 0 auto">
 
-![Logo FinFacilita](https://github.com/rodrigopazian/Projeto-FIAP-Fintech-99583/assets/109311576/18b6fdbb-67ae-42c7-b322-b5c2970131e9)
+<img>![Logo FinFacilita](https://github.com/rodrigopazian/Projeto-FIAP-Fintech-99583/assets/109311576/18b6fdbb-67ae-42c7-b322-b5c2970131e9)
+</img>
 </p>
 <h1 align="center">
 	Projeto-FIAP-Fintech-99583
