@@ -13,6 +13,11 @@ function validateFields() {
     });
 }
 
+/*
+fdsafasd
+fdasfsad
+*/
+
 function formatCurrency() {
     const numericInputs = document.querySelectorAll(".number-input");
     

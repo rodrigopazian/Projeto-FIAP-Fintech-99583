@@ -74,7 +74,7 @@
                     <label for="email">ou</label>
                     <div class="container-input">
                         <i class="fa-solid fa-check checkmark-offset"></i>
-                        <input id="email" class="email-input" name="email" type="email" placeholder="E-mail" maxlength="32" required autofocus>
+                        <input id="email" class="input email-input" name="email" type="email" placeholder="E-mail" maxlength="32" required autofocus>
                         <i class="fa-solid fa-check icon-checkmark"></i>
                     </div>
                     
@@ -104,6 +104,11 @@
     <!-- Call script Bootstrap and app.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/app_index.js"></script>
+    <script type="text/javascript" src="./assets/js/models/SignUp.js"></script>
+    <script type="text/javascript">
+    let sign = new SignUp();
+    console.log(sign.login);
+    </script>
 </body>
 
 </html>

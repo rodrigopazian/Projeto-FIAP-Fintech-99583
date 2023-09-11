@@ -228,12 +228,17 @@ input {
     background-color: var(--semi-transparent);
 }
 
-input:focus {
-    border-color: var(--red-money-color);
-    outline: var(--red-money-color);
+.input {    
+    outline: none;
 }
 
-input::selection {    
+.input:focus {
+    outline: none;
+    border-color: var(--red-money-color);
+}
+
+.input:selection {    
+    border-color: var(--red-money-color);
     outline: var(--red-money-color);
 }
 

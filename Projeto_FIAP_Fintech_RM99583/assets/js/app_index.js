@@ -15,4 +15,17 @@ function validateFields() {
     });
 }
 
+
+export function storeLoginPassword() {
+    document.querySelector("#btn-criar-email").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const login = document.querySelector("#email").value;
+        const pass = document.querySelector("#password").value;
+        return login, pass;
+        
+
+
+    });
+}
+
 validateFields();

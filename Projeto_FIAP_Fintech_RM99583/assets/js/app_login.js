@@ -15,6 +15,4 @@ function validateFields() {
     });
 }
 
-function 
-
 validateFields();
