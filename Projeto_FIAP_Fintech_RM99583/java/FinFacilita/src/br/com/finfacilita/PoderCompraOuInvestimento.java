@@ -8,7 +8,7 @@ public class PoderCompraOuInvestimento {
 
 	private double vlPoderCompraInv;
 
-	private Usuario usuario;
+	private Objetivo.Usuario usuario;
 
 	private Despesa despesa;
 

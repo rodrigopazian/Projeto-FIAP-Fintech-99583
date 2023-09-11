@@ -1,32 +1,40 @@
 package br.com.finfacilita;
 
-import java.util.Date;
 import java.util.Collection;
+import java.util.Date;
 
-public class Despesa {
-
-	private String nmDespesa;
-
-	private double vlDespesa;
-
-	private Date dtCobrancaDespesa;
+public class Despesa extends TransacaoCadastrada {
 
 	private boolean despesaFixa;
 
-	private Collection<Usuario> usuario;
+	private boolean novoDespesaFixa;
+
+	private Collection<Objetivo.Usuario> usuario;
 
 	private Collection<PoderCompraOuInvestimento> poderCompraOuInvestimento;
 
-	public void cadastrarDespesa(String nmDespesa, double vlDespesa, Date dtCobrancaDespesa, boolean despesaFixa) {
+	public void cadastrarTransacao(String nome, double valor, Date data, int tipoTransacao, boolean despesaFixa) {
 
 	}
 
-	public void excluirDespesa(String nmDespesa) {
+	public void alterarTransacao(String nome, String novoNome, double novoValor, Date novoData, boolean novoDespesaFixa) {
 
 	}
 
-	public void alterarDespesa(String nmDespesaAtual, String nmDespesaNovo, double vlDespesaNovo, Date dtCobrancaDespesaNovo, boolean despesaFixaNovo) {
+	public void excluirTransacao(String nome, int tipoTransacao) {
 
+	}
+
+	@Override
+	protected void cadastrarTransacao(String nome, double valor, Date data, int tipoTransacao) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void alterarTransacao(String nome, String novoNome, double valorNovo, Date dataNovo) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

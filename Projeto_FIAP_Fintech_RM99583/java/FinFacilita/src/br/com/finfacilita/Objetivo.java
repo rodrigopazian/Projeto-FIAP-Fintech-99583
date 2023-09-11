@@ -1,29 +1,69 @@
 package br.com.finfacilita;
 
-import java.util.Date;
 import java.util.Collection;
+import java.util.Date;
 
-public class Objetivo {
-
-	private String nmObjetivo;
-
-	private double vlObjetivo;
+public class Objetivo extends TransacaoCadastrada {
 
 	private double vlRealidadeTendencia;
 
-	private Date dtObjetivo;
+	private Collection<Objetivo.Usuario> usuario;
 
-	private Collection<Usuario> usuario;
-
-	public void cadastrarObjetivo(String nmObjetivo, double vlObjetivo, Date dtObjetivo) {
+	public void cadastrarTransacao(String nome, double valor, Date data, int tipoTransacao) {
 
 	}
 
-	public void excluirObjetivo(String nmObjetivo) {
+	public void alterarTransacao(String nome, String novoNome, double novoValor, Date novoData) {
 
 	}
 
-	public void alterarObjetivo(String nmObjetivoAtual, String nmObjetivoNovo, double vlObjetivoNovo, Date dtObjetivoNovo) {
+	public void excluirTransacao(String nome, int tipoTransacao) {
+
+	}
+
+	public class Usuario extends Pessoa {
+
+		private String eMail;
+
+		private String nomeUsuario;
+
+		private Collection<Ativo> exibirAtivoUsuario;
+
+		private Senha senha;
+
+		private PoderCompraOuInvestimento poderCompraOuInvestimento;
+
+		private Despesa despesa;
+
+		private Receita receita;
+
+		private Objetivo objetivo;
+
+		private TransacaoCadastrada transacaoCadastrada;
+
+		public void cadastrarUsuario(int cpf, String eMail, String nomeUsuario, String senhahash) {
+
+		}
+
+		public void mudarSenha(String senhaAtual, String senhaNova) {
+
+		}
+
+		public void excluirUsuario(String senhahash) {
+
+		}
+
+		@Override
+		protected void cadastrarUsuario() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		protected void excluirUsuario() {
+			// TODO Auto-generated method stub
+			
+		}
 
 	}
 

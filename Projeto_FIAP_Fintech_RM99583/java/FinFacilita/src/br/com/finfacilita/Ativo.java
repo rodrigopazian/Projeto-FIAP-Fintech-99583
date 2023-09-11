@@ -1,5 +1,6 @@
 package br.com.finfacilita;
 
+import java.util.Collection;
 
 public class Ativo {
 
@@ -8,6 +9,8 @@ public class Ativo {
 	private String nmAtivo;
 
 	private double vlAtivoAtual;
+
+	private Collection<Objetivo.Usuario> exibirAtivoUsuario;
 
 	public void consultarAtivos(String nmAtivo) {
 

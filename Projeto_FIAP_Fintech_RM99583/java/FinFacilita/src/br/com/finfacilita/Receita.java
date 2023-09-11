@@ -1,32 +1,40 @@
 package br.com.finfacilita;
 
-import java.util.Date;
 import java.util.Collection;
+import java.util.Date;
 
-public class Receita {
-
-	private String nmReceita;
-
-	private double vlReceita;
-
-	private Date dtRecebimento;
+public class Receita extends TransacaoCadastrada {
 
 	private boolean receitaFixa;
 
-	private Collection<Usuario> usuario;
+	private boolean novoReceitaFixa;
+
+	private Collection<Objetivo.Usuario> usuario;
 
 	private Collection<PoderCompraOuInvestimento> poderCompraOuInvestimento;
 
-	public void cadastrarReceita(String nmReceita, double vlReceita, Date dtRecebimento, boolean receitaFixa) {
+	public void cadastrarTransacao(String nome, double valor, Date data, int tipoTransacao, boolean receitaFixa) {
 
 	}
 
-	public void excluirReceita(String nmReceita) {
+	public void alterarTransacao(String nome, String novoNome, double novoValor, Date novoData, boolean novoReceitaFixa) {
 
 	}
 
-	public void alterarReceita(String nmReceitaAtual, String nmReceitaNovo, double vlReceitaNovo, Date dtRecebimentoNovo, boolean receitaFixaNovo) {
+	public void excluirTransacao(String nome, int tipoTransacao) {
 
+	}
+
+	@Override
+	protected void cadastrarTransacao(String nome, double valor, Date data, int tipoTransacao) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void alterarTransacao(String nome, String novoNome, double valorNovo, Date dataNovo) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
