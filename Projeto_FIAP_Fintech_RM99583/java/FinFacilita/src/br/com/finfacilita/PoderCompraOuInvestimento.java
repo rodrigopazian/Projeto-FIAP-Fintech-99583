@@ -1,6 +1,7 @@
 package br.com.finfacilita;
 
 import java.util.Date;
+import java.util.Collection;
 
 public class PoderCompraOuInvestimento {
 
@@ -8,7 +9,7 @@ public class PoderCompraOuInvestimento {
 
 	private double vlPoderCompraInv;
 
-	private Objetivo.Usuario usuario;
+	private Usuario usuario;
 
 	private Despesa despesa;
 

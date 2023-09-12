@@ -18,7 +18,7 @@ public abstract class TransacaoCadastrada {
 
 	protected Date novoData;
 
-	private Objetivo.Usuario usuario;
+	private Usuario usuario;
 
 	protected abstract void cadastrarTransacao(String nome, double valor, Date data, int tipoTransacao);
 

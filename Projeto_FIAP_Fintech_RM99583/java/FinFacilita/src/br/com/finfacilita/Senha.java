@@ -4,7 +4,7 @@ public class Senha {
 
 	private Senha senhahash;
 
-	private Objetivo.Usuario usuario;
+	private Usuario usuario;
 
 	public void verificarSenha(String senhahash, int cpf) {
 

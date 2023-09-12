@@ -10,7 +10,7 @@ public class Ativo {
 
 	private double vlAtivoAtual;
 
-	private Collection<Objetivo.Usuario> exibirAtivoUsuario;
+	private Collection<Usuario> exibirAtivoUsuario;
 
 	public void consultarAtivos(String nmAtivo) {
 

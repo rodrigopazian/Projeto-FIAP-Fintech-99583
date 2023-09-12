@@ -9,7 +9,7 @@ public class Receita extends TransacaoCadastrada {
 
 	private boolean novoReceitaFixa;
 
-	private Collection<Objetivo.Usuario> usuario;
+	private Collection<Usuario> usuario;
 
 	private Collection<PoderCompraOuInvestimento> poderCompraOuInvestimento;
 

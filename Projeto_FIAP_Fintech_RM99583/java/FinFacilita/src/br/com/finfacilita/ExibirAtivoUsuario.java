@@ -4,7 +4,7 @@ public class ExibirAtivoUsuario {
 
 	private boolean ativoExibir = false;
 
-	private Objetivo.Usuario usuario;
+	private Usuario usuario;
 
 	private Ativo ativo;
 
