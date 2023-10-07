@@ -1,9 +1,13 @@
 
 <img align="center">![Logo FinFacilita](https://github.com/rodrigopazian/Projeto-FIAP-Fintech-99583/assets/109311576/18b6fdbb-67ae-42c7-b322-b5c2970131e9)</img>
 
+
+
 <h1 align="center">
 	Projeto-FIAP-Fintech-99583
 </h1>
+
+<img src="Projeto_FIAP_Fintech_RM99583/assets/images/Finfacilita.png">
 
 <h2 align="center">DOCUMENTO VISÃO FINTECH</h2>
 
