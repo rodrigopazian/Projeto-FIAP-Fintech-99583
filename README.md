@@ -2,9 +2,7 @@
 	Projeto-FIAP-Fintech-99583
 </h1>
 
-<p align="center">
-	<img src="Projeto_FIAP_Fintech_RM99583/assets/images/Finfacilita.png">
-</p>
+<p align="center"><img src="Projeto_FIAP_Fintech_RM99583/assets/images/Finfacilita.png"></p>
 
 <h2 align="center">
 	DOCUMENTO VISÃO FINTECH
